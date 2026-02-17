@@ -108,7 +108,7 @@ body {
 
 .menu__line--middle {
   top: 5px;
-  left: -10px !important;
+  left: -10px;
   width: 65px;
 }
 

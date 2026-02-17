@@ -1,0 +1,35 @@
+.say {
+  background: #f8f6f3;
+}
+.say__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.title__say {
+  font-style: normal;
+  font-weight: 400;
+  color: #282828;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  opacity: 0.8;
+  padding: 25px 0 20px 0px;
+  position: absolute;
+  top: 43px;
+}
+
+.say_hero {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.01em;
+  color: #282828;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
