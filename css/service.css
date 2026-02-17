@@ -1,0 +1,93 @@
+.service {
+  width: 100%;
+  background-image: url("../images/service-bg.jpg");
+  background-size: cover;
+  transition: 1s;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 25px 0 20px 100px;
+  position: absolute;
+}
+
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  height: 100%;
+}
+
+.service__card {
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 479px;
+  gap: 14px;
+  transition: 1s;
+}
+
+.service__card:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    .service__card__hidden {
+      opacity: 1;
+      transition: 1s;
+    }
+  }
+}
+
+.card_middle {
+  border-left: 1px solid #ffffff52;
+  border-bottom: 1px solid #ffffff52;
+}
+
+.card__last {
+  padding: 100px;
+  border-left: 1px solid #ffffff52;
+}
+
+.service__card__title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  min-height: 70px;
+}
+
+.service__card__text {
+  font-size: 14px;
+  font-weight: 100;
+  max-width: 310px;
+  letter-spacing: 0.5px;
+}
+
+.service__hr {
+  width: 150px;
+}
+
+.service__number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.service__card__hidden {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  opacity: 0;
+}
