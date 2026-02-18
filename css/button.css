@@ -92,3 +92,8 @@
   text-align: center;
   padding-top: 4rem;
 }
+
+.button__container__people {
+  width: 100%;
+  text-align: center;
+}

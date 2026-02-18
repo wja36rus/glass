@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/time.css" />
     <link rel="stylesheet" href="./css/say.css" />
     <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/people.css" />
     <title>Остекление от производителя</title>
   </head>
   <body>
@@ -565,6 +566,134 @@
           </div>
         </div>
       </section>
+      <section class="people">
+        <div class="people__container">
+          <h4 class="title__people">Отзывы</h4>
+          <div class="people__card__wrapper">
+            <div class="people__card">
+              <div class="people__card__logo_line">
+                <div class="people__card__logo"></div>
+                <div class="people__card__starline">
+                  <div class="people__card__title__and__start">
+                    <h1 class="people__card__title">Евгений</h1>
+                    <img src="./images/icon/star.svg" alt="" />
+                  </div>
+                  <p class="people__card__boss">
+                    директор Природного парка «Олений»,
+                  </p>
+                  <p class="people__card__place">Липецкая обл.</p>
+                </div>
+              </div>
+              <div class="people__card__text">
+                Отличная компания с первоклассными специалистами. Подходят
+                к заказу очень грамотно, прорабатывая каждую мелочь
+              </div>
+            </div>
+            <div class="people__card">
+              <div class="people__card__logo_line">
+                <div class="people__card__logo"></div>
+                <div class="people__card__starline">
+                  <div class="people__card__title__and__start">
+                    <h1 class="people__card__title">Компания</h1>
+                    <img src="./images/icon/star.svg" alt="" />
+                  </div>
+                  <p class="people__card__boss"></p>
+                  <p class="people__card__place"></p>
+                </div>
+              </div>
+              <div class="people__card__text">
+                Грамотно проконсультировали. Сориентировали по цене. Помогли
+                проработать ТЗ и сэкономить около 20% за счет оптимизации
+                конструкции. Оперативно давали обратную связь. Работа по
+                договору с четкими сроками.
+              </div>
+            </div>
+            <div class="people__card">
+              <div class="people__card__logo_line">
+                <div class="people__card__logo"></div>
+                <div class="people__card__starline">
+                  <div class="people__card__title__and__start">
+                    <h1 class="people__card__title">Илья</h1>
+                    <img src="./images/icon/star.svg" alt="" />
+                  </div>
+                  <p class="people__card__boss">
+                    директор Природного парка «Олений»,
+                  </p>
+                  <p class="people__card__place">частный дом</p>
+                </div>
+              </div>
+              <div class="people__card__text">
+                Компания знает своё дело на все 100%. Заказ выполнен точно
+                в срок, качество супер, работой доволен. Никаких подводных
+                камней, цена адекватная.
+              </div>
+            </div>
+            <div class="people__card">
+              <div class="people__card__logo_line">
+                <div class="people__card__logo"></div>
+                <div class="people__card__starline">
+                  <div class="people__card__title__and__start">
+                    <h1 class="people__card__title">Евгений</h1>
+                    <img src="./images/icon/star.svg" alt="" />
+                  </div>
+                  <p class="people__card__boss">
+                    директор Природного парка «Олений»,
+                  </p>
+                  <p class="people__card__place">Липецкая обл.</p>
+                </div>
+              </div>
+              <div class="people__card__text">
+                Отличная компания с первоклассными специалистами. Подходят
+                к заказу очень грамотно, прорабатывая каждую мелочь
+              </div>
+            </div>
+            <div class="people__card">
+              <div class="people__card__logo_line">
+                <div class="people__card__logo"></div>
+                <div class="people__card__starline">
+                  <div class="people__card__title__and__start">
+                    <h1 class="people__card__title">Компания</h1>
+                    <img src="./images/icon/star.svg" alt="" />
+                  </div>
+                  <p class="people__card__boss"></p>
+                  <p class="people__card__place"></p>
+                </div>
+              </div>
+              <div class="people__card__text">
+                Грамотно проконсультировали. Сориентировали по цене. Помогли
+                проработать ТЗ и сэкономить около 20% за счет оптимизации
+                конструкции. Оперативно давали обратную связь. Работа по
+                договору с четкими сроками.
+              </div>
+            </div>
+            <div class="people__card">
+              <div class="people__card__logo_line">
+                <div class="people__card__logo"></div>
+                <div class="people__card__starline">
+                  <div class="people__card__title__and__start">
+                    <h1 class="people__card__title">Илья</h1>
+                    <img src="./images/icon/star.svg" alt="" />
+                  </div>
+                  <p class="people__card__boss">
+                    директор Природного парка «Олений»,
+                  </p>
+                  <p class="people__card__place">частный дом</p>
+                </div>
+              </div>
+              <div class="people__card__text">
+                Компания знает своё дело на все 100%. Заказ выполнен точно
+                в срок, качество супер, работой доволен. Никаких подводных
+                камней, цена адекватная.
+              </div>
+            </div>
+          </div>
+          <div class="button__container__people" id="show__people">
+            <button class="button__main__black">
+              <p class="button__text">ЧИТАТЬ ВСЕ ОТЗЫВЫ</p>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script
@@ -612,6 +741,11 @@
       $(this).addClass("active");
       $(".jobs__item__card").removeClass("active");
       $(`#jobs${attr}`).addClass("active");
+    });
+
+    $("#show__people").click(function (e) {
+      e.preventDefault();
+      $(".people__card__wrapper").toggleClass("active");
     });
   </script>
 </html>
