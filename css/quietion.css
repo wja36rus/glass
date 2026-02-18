@@ -1,0 +1,24 @@
+.quietion__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10rem 0;
+  position: relative;
+}
+
+.title__quietion {
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  opacity: 0.8;
+  padding: 25px 0 20px 0px;
+  position: absolute;
+  top: 43px;
+}
+
+.quietion {
+  background-image: url("../images/question.jpg");
+  background-size: cover;
+}
