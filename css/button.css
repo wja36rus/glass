@@ -86,3 +86,9 @@
   text-align: center;
   padding-bottom: 5rem;
 }
+
+.button__container__project {
+  width: 100%;
+  text-align: center;
+  padding-top: 4rem;
+}
