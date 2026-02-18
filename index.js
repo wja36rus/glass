@@ -33,4 +33,4 @@ function combineFilesSync(sourceDir, outputFile) {
   }
 }
 
-combineFilesSync("./css", "./result.css");
+combineFilesSync("./css", "./css/index.css");
