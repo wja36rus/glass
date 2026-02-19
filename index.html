@@ -988,6 +988,16 @@
       const name = name_.value;
       const phone = phone_.value;
 
+      $(".call__to__action").addClass("active");
+      $("#call__to__action__form").addClass("active");
+      $(".call__to__action__form__success").addClass("active");
+
+      setTimeout(() => {
+        $(".call__to__action").removeClass("active");
+        $("#call__to__action__form").removeClass("active");
+        $(".call__to__action__form__success").removeClass("active");
+      }, 3000);
+
       console.log("### ~ phone:", {
         name: name,
         phone: phone,
