@@ -205,6 +205,12 @@
   padding-top: 2rem;
 }
 
+.button__container__call {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .button__container__jobs {
   width: 22rem;
   text-align: center;
@@ -388,14 +394,14 @@ body {
   transition: 1s;
 }
 
-.call-to-action {
+.call__to__action {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 4px;
 }
 
-.call-to-action__button {
+.call__to__action__button {
   background: none;
   border: none;
   color: white;
@@ -407,11 +413,11 @@ body {
   padding: 0;
 }
 
-.call-to-action__button:hover {
+.call__to__action__button:hover {
   opacity: 0.8;
 }
 
-.call-to-action__underline {
+.call__to__action__underline {
   width: 64px;
   height: 2px;
   background-color: white;
@@ -1373,4 +1379,71 @@ nav.nav__menu.active {
 
 #menu {
   position: relative;
+}
+
+#call__to__action__form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  align-items: center;
+  background: #00000085;
+  display: none;
+}
+
+#call__to__action__form.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call__to__action__form__inset {
+  background: #282828;
+  padding: 5rem;
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 65%);
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+.call__to__action__form__inset.active {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.call__to__action__close {
+  position: absolute;
+  width: 3rem;
+  top: 5px;
+  right: 5px;
+  transition: 1s;
+
+  &:hover {
+    cursor: pointer;
+    transition: 1s;
+    opacity: 0.7;
+  }
+}
+
+.call__to__action__form__success {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #282828;
+  padding: 5rem;
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 65%);
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+.call__to__action__form__success.active {
+  display: block;
+}
+
+.call__to__action__form__success__image {
+  width: 5rem;
 }

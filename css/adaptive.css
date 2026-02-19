@@ -15,7 +15,7 @@
     padding: 0 20px;
   }
 
-  .call-to-action__button {
+  .call__to__action__button {
     font-size: 14px;
   }
 
@@ -242,11 +242,11 @@
     height: 44px;
   }
 
-  .call-to-action__button {
+  .call__to__action__button {
     font-size: 12px;
   }
 
-  .call-to-action__underline {
+  .call__to__action__underline {
     width: 40px;
   }
 

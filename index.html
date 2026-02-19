@@ -14,9 +14,45 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <div class="call-to-action">
-          <button class="call-to-action__button">заказать звонок</button>
-          <span class="call-to-action__underline"></span>
+        <div class="call__to__action">
+          <button class="call__to__action__button">заказать звонок</button>
+          <span class="call__to__action__underline"></span>
+          <form id="call__to__action__form">
+            <div class="call__to__action__form__inset">
+              <img
+                class="call__to__action__close"
+                src="./images/icon/close.svg"
+                alt=""
+              />
+              <h1>Напишите нам <br />и мы вам перезвоним!</h1>
+              <input
+                type="text"
+                name="username"
+                class="form__input"
+                placeholder="Имя"
+              />
+              <input
+                name="phone"
+                type="text"
+                class="form__input"
+                placeholder="+7"
+              />
+              <div class="button__container__call">
+                <button class="button__main" id="call__to__action__submit">
+                  <p class="button__text">ОТПРАВИТЬ</p>
+                </button>
+              </div>
+            </div>
+            <div class="call__to__action__form__success">
+              <img
+                class="call__to__action__form__success__image"
+                src="./images/icon/success.svg"
+                alt=""
+              />
+              <h1>Ваше сообщение получено!</h1>
+              <h3>Мы скоро с Вами свяжемся</h3>
+            </div>
+          </form>
         </div>
 
         <a href="/" class="logo">
@@ -982,6 +1018,29 @@
           },
         );
       }
+    });
+
+    $(".call__to__action__button").click(function (e) {
+      e.preventDefault();
+      $("#call__to__action__form").addClass("active");
+      $(".call__to__action__form__inset").addClass("active");
+    });
+
+    $(".call__to__action__close").click(function (e) {
+      e.preventDefault();
+      $("#call__to__action__form").removeClass("active");
+      $(".call__to__action__form__inset").removeClass("active");
+    });
+
+    $("#call__to__action__submit").click(function (e) {
+      e.preventDefault();
+      $(".call__to__action__form__inset").removeClass("active");
+      $(".call__to__action__form__success").addClass("active");
+
+      setTimeout(() => {
+        $("#call__to__action__form").removeClass("active");
+        $(".call__to__action__form__success").removeClass("active");
+      }, 3000);
     });
   </script>
 </html>
