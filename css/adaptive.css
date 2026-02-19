@@ -3,7 +3,7 @@
 /*Адаптив для алока jobs*/
 @media screen and (max-width: 1360px) {
   .jobs__cards {
-  padding-left: 29vw;
+    padding-left: 29vw;
   }
 }
 
@@ -197,6 +197,32 @@
 
   .footer__offer {
     margin: 0 1rem;
+  }
+
+  /*Form блок*/
+  .form__title__second {
+    font-size: 28px;
+  }
+
+  .form__text {
+    font-size: 16px;
+  }
+
+  .form__container {
+    text-align: center;
+  }
+
+  .form__inner {
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__images {
+    display: none;
   }
 }
 
