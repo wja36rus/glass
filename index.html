@@ -27,7 +27,7 @@
           />
         </a>
 
-        <div class="menu">
+        <div class="menu" id="menu">
           <button class="menu__toggle" aria-label="Открыть меню">
             <span class="menu__icon">
               <span class="menu__line"></span>
@@ -36,6 +36,14 @@
             </span>
             <span class="menu__text">меню</span>
           </button>
+          <nav class="nav__menu">
+            <a href="#service" class="nav__menu__item">Что остекляем</a>
+            <a href="#jobs" class="nav__menu__item">Как остекляем</a>
+            <a href="#business" class="nav__menu__item">Бизнесу</a>
+            <a href="#boss" class="nav__menu__item">О компании</a>
+            <a href="#project" class="nav__menu__item">Проекты</a>
+            <a href="#contact" class="nav__menu__item">Контакты</a>
+          </nav>
         </div>
       </div>
     </header>
@@ -85,7 +93,7 @@
           </div>
         </div>
       </section>
-      <section class="service">
+      <section class="service" id="service">
         <h4 class="title__service">Что остекляем</h4>
         <div class="service__grid">
           <div id="service__card_1" class="service__card">
@@ -192,7 +200,7 @@
           </div>
         </div>
       </section>
-      <section class="jobs">
+      <section class="jobs" id="jobs">
         <div class="jobs__container">
           <h4 class="title__job">Как остекляем</h4>
           <div class="jobs__wrapper">
@@ -256,7 +264,7 @@
           </div>
         </div>
       </section>
-      <section class="business">
+      <section class="business" id="business">
         <div class="bus__container">
           <h4 class="title__business">Для бизнеса</h4>
           <h1 class="bus__hero">
@@ -381,7 +389,7 @@
           </div>
         </div>
       </section>
-      <section class="boss">
+      <section class="boss" id="boss">
         <div class="boss__container">
           <h4 class="title__boss">О компании</h4>
           <div class="boss__lines">
@@ -477,7 +485,7 @@
           </h1>
         </div>
       </section>
-      <section class="project">
+      <section class="project" id="project">
         <div class="project__wrapper">
           <div class="project__left__columns">
             <h1 class="project__title">
@@ -570,8 +578,8 @@
                 </div>
               </div>
               <div class="people__card__text">
-                Отличная компания с первоклассными специалистами. Подходят
-                к заказу очень грамотно, прорабатывая каждую мелочь
+                Отличная компания с первоклассными специалистами. Подходят к
+                заказу очень грамотно, прорабатывая каждую мелочь
               </div>
             </div>
             <div class="people__card">
@@ -608,9 +616,9 @@
                 </div>
               </div>
               <div class="people__card__text">
-                Компания знает своё дело на все 100%. Заказ выполнен точно
-                в срок, качество супер, работой доволен. Никаких подводных
-                камней, цена адекватная.
+                Компания знает своё дело на все 100%. Заказ выполнен точно в
+                срок, качество супер, работой доволен. Никаких подводных камней,
+                цена адекватная.
               </div>
             </div>
             <div class="people__card">
@@ -628,8 +636,8 @@
                 </div>
               </div>
               <div class="people__card__text">
-                Отличная компания с первоклассными специалистами. Подходят
-                к заказу очень грамотно, прорабатывая каждую мелочь
+                Отличная компания с первоклассными специалистами. Подходят к
+                заказу очень грамотно, прорабатывая каждую мелочь
               </div>
             </div>
             <div class="people__card">
@@ -666,9 +674,9 @@
                 </div>
               </div>
               <div class="people__card__text">
-                Компания знает своё дело на все 100%. Заказ выполнен точно
-                в срок, качество супер, работой доволен. Никаких подводных
-                камней, цена адекватная.
+                Компания знает своё дело на все 100%. Заказ выполнен точно в
+                срок, качество супер, работой доволен. Никаких подводных камней,
+                цена адекватная.
               </div>
             </div>
           </div>
@@ -791,7 +799,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="footer__flex">
         <div class="footer__logo">
           <img
@@ -868,7 +876,7 @@
       </div>
       <div class="footer__offer">
         <p class="footer__offer__text">
-          Вся представленная информация на сайте не является публичной офертой.
+          Вся представленная информация на сайте не является публичной офертой.
         </p>
         <br />
         <p class="footer_offer__text">2026. Все права защищены.</p>
@@ -948,6 +956,32 @@
         name: name,
         phone: phone,
       });
+    });
+
+    $("#menu").click(function (e) {
+      e.preventDefault();
+      $(".nav__menu").toggleClass("active");
+    });
+
+    var headerHeight = $("header").outerHeight();
+
+    $('a[href^="#"]').on("click", function (event) {
+      event.preventDefault();
+
+      var target = $(this.hash);
+
+      if (target.length) {
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - headerHeight + 50,
+          },
+          1000,
+          "swing",
+          function () {
+            window.location.hash = target.selector;
+          },
+        );
+      }
     });
   </script>
 </html>
