@@ -1326,6 +1326,9 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  z-index: 10;
+  
+  
 
   &:hover {
     cursor: pointer;
@@ -1339,8 +1342,9 @@ body {
 .telegramm__text {
   background: white;
   color: black;
-  padding: 12px 2rem;
+  padding: 10px 2rem;
   border-radius: 2rem;
   opacity: 0;
   transition: 1s;
+  box-shadow: 0px 3px 2px 0px #00000012;
 }
