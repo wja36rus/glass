@@ -744,6 +744,52 @@
           </div>
         </div>
       </section>
+      <section class="form">
+        <div class="form__container">
+          <div class="form__inner">
+            <h1 class="form__title">НАС ВЫБИРАЮТ ЛЮДИ, КОТОРЫЕ</h1>
+            <div class="form__flex__container">
+              <div class="form__flex__item">
+                <img src="./images/icon/divider.svg" alt="" />
+                <p class="form__text">ценят профессионализм</p>
+              </div>
+              <div class="form__flex__item">
+                <img src="./images/icon/divider.svg" alt="" />
+                <p class="form__text">берегут свои нервы и время</p>
+              </div>
+              <div class="form__flex__item">
+                <img src="./images/icon/divider.svg" alt="" />
+                <p class="form__text">
+                  хотят получить лучшее в рамках своего бюджета
+                </p>
+              </div>
+            </div>
+            <h1 class="form__title__second">
+              Вы в одном шаге от правильного решения о выборе подрядчика
+            </h1>
+            <form id="form">
+              <input
+                type="text"
+                name="username"
+                class="form__input"
+                placeholder="Имя"
+              />
+              <input
+                name="phone"
+                type="text"
+                class="form__input"
+                placeholder="+7"
+              />
+              <div class="button__container__project">
+                <button id="form__submit" class="button__main">
+                  <p class="button__text">НАЧАТЬ ПРОЕКТ</p>
+                </button>
+              </div>
+            </form>
+          </div>
+          <img class="form__images" src="./images/form.png" alt="" />
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer__flex">
@@ -885,6 +931,19 @@
     $(".quietion__card").click(function (e) {
       e.preventDefault();
       $(this).find(".quietion__answer").toggleClass("active");
+    });
+
+    $("#form__submit").click(function (e) {
+      e.preventDefault();
+      const form = $("#form").serializeArray();
+      const [name_, phone_] = form;
+      const name = name_.value;
+      const phone = phone_.value;
+
+      console.log("### ~ phone:", {
+        name: name,
+        phone: phone,
+      });
     });
   </script>
 </html>
