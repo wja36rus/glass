@@ -630,8 +630,10 @@ body {
 
 .jobs__container {
   display: flex;
-  margin-left: 317px;
   height: 40rem;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .jobs__wrapper {
@@ -639,7 +641,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  width: 37rem;
+  position: relative;
+  z-index: 2;
 }
 
 .jobs__items.active {
@@ -691,6 +694,8 @@ body {
 .jobs__item__card {
   display: none;
   background-size: 100% 100%;
+  position: absolute;
+  right: 0;
 }
 
 .jobs__item__card.active {
@@ -1114,13 +1119,16 @@ body {
 }
 
 .service__card {
-  padding: 83px 162px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 479px;
   gap: 14px;
   transition: 1s;
+  flex: 1;
+  width: 600px;
+  flex-basis: 26%;
+  padding: 80px 100px;
+  border: 1px solid #ffffff24;
 }
 
 .service__card:hover {
@@ -1142,7 +1150,6 @@ body {
 }
 
 .card__last {
-  padding: 83px 162px;
   border-left: 1px solid #ffffff52;
 }
 

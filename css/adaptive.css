@@ -1,6 +1,14 @@
 /* Адаптивная верстка - mobile first */
 
+/*Адаптив для алока jobs*/
+@media screen and (max-width: 1360px) {
+  .jobs__cards {
+  padding-left: 29vw;
+  }
+}
+
 /* Планшеты (до 1024px) */
+
 @media screen and (max-width: 1024px) {
   /* Header */
   .header__container {
@@ -62,11 +70,11 @@
 
   /* Jobs секция */
   .jobs__container {
-    margin-left: 100px;
+    padding: 1rem;
   }
 
   .jobs__wrapper {
-    width: 300px;
+    width: auto;
   }
 
   .jobs__cards {
@@ -304,12 +312,8 @@
     padding: 40px 20px;
     height: auto;
     min-height: 300px;
-  }
-
-  .card_middle,
-  .card__last {
-    border-left: none;
-    border-bottom: 1px solid #ffffff52;
+    flex: 0;
+    width: auto;
   }
 
   .service__card__title {
@@ -364,6 +368,7 @@
 
   .jobs__item__card {
     margin-top: 2rem;
+    position: relative;
   }
 
   .jobs__cards {
