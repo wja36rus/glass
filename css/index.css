@@ -1318,3 +1318,29 @@ body {
   position: relative;
   z-index: 2;
 }
+
+.telegramm__to__go {
+  position: fixed;
+  bottom: 13px;
+  right: 13px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    .telegramm__text {
+      opacity: 1;
+      transition: 1s;
+    }
+  }
+}
+
+.telegramm__text {
+  background: white;
+  color: black;
+  padding: 12px 2rem;
+  border-radius: 2rem;
+  opacity: 0;
+  transition: 1s;
+}
