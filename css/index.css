@@ -24,7 +24,7 @@
 
 .boss__lines {
   display: flex;
-  gap: 6rem;
+  gap: 11rem;
   padding: 9.5rem 0px;
 }
 
@@ -1446,4 +1446,8 @@ nav.nav__menu.active {
 
 .call__to__action__form__success__image {
   width: 5rem;
+}
+
+.footer__docs {
+  color: white;
 }
